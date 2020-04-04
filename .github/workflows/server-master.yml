@@ -39,15 +39,15 @@ jobs:
           node-version: ${{ matrix.node-version }}
 
       - name: Install dependencies
+        working-directory: ./server
         run: yarn install
 
-      - name: Build
-        run: yarn build
-
       - name: Run tests
+        working-directory: ./server
         run: yarn test
 
       - name: Run linters
+        working-directory: ./server
         run: yarn lint
 
         env:
