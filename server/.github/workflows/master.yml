@@ -1,0 +1,37 @@
+name: Install
+on:
+  pull_request:
+    branches:
+      - master
+  push:
+    branches:
+      - master
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    strategy:
+      matrix:
+        platform: [ubuntu-latest]
+        node-version: [10.x]
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v1
+
+      - name: Set up Node version ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Install dependencies
+        run: yarn install
+
+      - name: Run linters
+        run: yarn lint
+
+      - name: Run tests
+        run: yarn test
+
+        env:
+          CI: true

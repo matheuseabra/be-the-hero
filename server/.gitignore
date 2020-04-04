@@ -1,0 +1,3 @@
+node_modules
+./src/database/dev.sqlite3
+./src/database/test.sqlite3
