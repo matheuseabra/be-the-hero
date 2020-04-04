@@ -2,22 +2,25 @@
     <img alt="BeTheHero" src=".github/logo.svg" width="250px" />
 </h1>
 
+![Actions Status](https://github.com/matheuseabra/be-the-hero/workflows/server-master.yml/badge.svg)](https://github.com/matheuseabra/be-the-hero/actions)
+
 <br>
 
-## 🚀 Tecnologias
+O Be The Hero é uma plataforma que visa ajudar instituições que estão passando por situações precárias e precisam de ajuda financeira.
+
+## Tecnologias
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-- [NodeJS](https://nodejs.org/en/)
 - [ReactJS](https://reactjs.org)
 - [React Native](https://facebook.github.io/react-native/)
 - [Expo](https://expo.io/)
+- [NodeJS](https://nodejs.org/en/)
+- [Jest](https://jest.io/)
+- [PostgreSQL](https://www.postgresql.org/)
+- [GitHub Actions](https://github.com/features/actions)
 
-## 💻 Projeto
-
-O Be The Hero é um projeto que visa ajudar instituições que estão passando por situações precárias e precisam de ajuda financeira.
-
-## 🤔 Como contribuir
+## Como contribuir
 
 - Faça um fork desse repositório;
 - Cria uma branch com a sua feature: `git checkout -b minha-feature`;
@@ -26,10 +29,10 @@ O Be The Hero é um projeto que visa ajudar instituições que estão passando p
 
 Depois que o merge da sua pull request for feito, você pode deletar a sua branch.
 
-## 📝 Licença
+## Licença
 
 Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para mais detalhes.
 
 ---
 
-Feito com 🖤 by matheuseabra
+Feito com 🖤 durante a semana Omnistack 11 by [@matseabra](https://twitter.com/matseabra)

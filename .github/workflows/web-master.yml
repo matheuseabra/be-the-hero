@@ -1,0 +1,50 @@
+name: install-build-test
+on:
+  pull_request:
+    branches:
+      - master
+    paths:
+      - ".github/**"
+      - "web/**"
+      - "!web/node_modules/**"
+      - "!server/**"
+      - "!mobile/**"
+
+  push:
+    branches:
+      - master
+    paths:
+      - ".github/**"
+      - "web/**"
+      - "!web/node_modules/**"
+      - "!server/**"
+      - "!mobile/**"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    strategy:
+      matrix:
+        platform: [ubuntu-latest]
+        node-version: [10.x]
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v1
+
+      - name: Set up Node version ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Install dependencies
+        working-directory: ./web
+        run: yarn install
+
+      - name: Build
+        working-directory: ./web
+        run: yarn build
+
+        env:
+          CI: true
