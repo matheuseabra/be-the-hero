@@ -1,12 +1,10 @@
-name: install-build-test
+name: server job
 on:
   pull_request:
     branches:
       - master
     paths:
-      - ".github/**"
       - "web/**"
-      - "!web/node_modules/**"
       - "!server/**"
       - "!mobile/**"
 
@@ -14,9 +12,7 @@ on:
     branches:
       - master
     paths:
-      - ".github/**"
       - "web/**"
-      - "!web/node_modules/**"
       - "!server/**"
       - "!mobile/**"
 

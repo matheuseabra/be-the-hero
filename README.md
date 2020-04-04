@@ -2,7 +2,7 @@
     <img alt="BeTheHero" src=".github/logo.svg" width="250px" />
 </h1>
 
-![Actions Status](https://github.com/matheuseabra/be-the-hero/workflows/server-master.yml/badge.svg)](https://github.com/matheuseabra/be-the-hero/actions)
+![](https://github.com/actions/matheuseabra/be-the-hero/.github/workflows/server-master.yml/badge.svg)
 
 <br>
 
