@@ -3,15 +3,21 @@ on:
   pull_request:
     branches:
       - master
+    paths:
+      - "server/**"
+      - "!server/node_modules/**"
+      - "!web/**"
+      - "!mobile/**"
+
   push:
     branches:
       - master
     paths:
       - "server/**"
       - "!server/node_modules/**"
-    paths-ignore:
-      - "web/**"
-      - "mobile/**"
+      - "!web/**"
+      - "!mobile/**"
+
 jobs:
   build:
     runs-on: ubuntu-latest
