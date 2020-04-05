@@ -1,4 +1,4 @@
-name: server job
+name: server-job
 on:
   pull_request:
     branches:

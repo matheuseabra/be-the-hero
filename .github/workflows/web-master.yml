@@ -1,4 +1,4 @@
-name: web job
+name: web-job
 on:
   pull_request:
     branches:
