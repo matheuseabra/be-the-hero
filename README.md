@@ -35,4 +35,4 @@ Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para
 
 ---
 
-Feito com 🖤 durante a semana Omnistack 11 by [@matseabra](https://twitter.com/matseabra)
+Feito com 🖤 durante a semana Omnistack 11 por [@matseabra](https://twitter.com/matseabra)
